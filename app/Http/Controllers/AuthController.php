@@ -46,7 +46,7 @@ class AuthController extends Controller
     public function success(Request $request){
         // $user = User::where('id',Auth::user())->get();
         return response()->json([
-            'token' => 'xsdsajdasjdaskdjaskj',
+            'token' => 'aaaahhhhehehheheeheh',
             'user' => $request->user(),
         ]);
 
