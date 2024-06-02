@@ -45,4 +45,13 @@ class AuthController extends Controller
         ]);
 
     }
+
+    public function success(Request $request){
+        // $user = User::where('id',Auth::user())->get();
+        return response()->json([
+            'token' => 'xsdsajdasjdaskdjaskj',
+            'user' => $request->user(),
+        ]);
+
+    }
 }
