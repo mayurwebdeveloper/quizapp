@@ -35,9 +35,6 @@ class AuthController extends Controller
     }
 // role based 
     public function userdetails(Request $request){
-        $user = User::find(1); // Replace with your user ID
-        $user->assignRole('admin');
-
         // $user = User::where('id',Auth::user())->get();
         return response()->json([
             // 'token' => $token,
